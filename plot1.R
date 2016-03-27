@@ -18,7 +18,8 @@ plot1 <- function() {
   png("./data/plot1.png")
   
   ## Plot a histogram of the Global Active Power values for these two days
-  hist(dt$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)")
+  hist(dt$Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)",
+       main = "Histogram of Global Active Power consumption")
   
   dev.off()
 }
